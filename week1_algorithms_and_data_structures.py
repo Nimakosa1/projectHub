@@ -66,16 +66,11 @@ def count_digits(num_int):
     digits present in the number.
     """
     count = 0
-    digits_lst = list()
 
     while num_int != 0:
-        digit = num_int % 10
-        digits_lst.append(str(digit))
         num_int = num_int // 10
         count += 1
 
-    digits_lst.reverse()
-    string = ", ".join(digits_lst)
     return count
 
 num = int(input("Enter the number: "))
